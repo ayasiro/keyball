@@ -1,4 +1,4 @@
-name: Build a firmware on demand
+name: Build a firmware on push
 
 on:
   push:
