@@ -1,0 +1,14 @@
+name: Build a firmware on demand
+
+on:
+  push:
+    branches:
+      - main  # mainブランチに変更があれば実行
+
+jobs:
+  build:
+    uses: ./.github/workflows/build-firmware.yml
+    with:
+      qmk_version: '0.22.14'
+      keyboard:    keyball44
+      keymap:      ayasiro
